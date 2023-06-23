@@ -25,4 +25,4 @@ cv2.destroyAllWindows() # É usada apenas para fechar de forma eficiente todas a
 B, G, R = cv2.split(img) # A sua função é dividir a imagem em 3 canais de cores nesse caso B "canal Blue/Azul", G "Green/Verde" e R "Red/Vermelho"
 img_grayscale_pondered = 0.299*B+0.587*G+0.114*R # Converte as cores em tons de cinza representando a luminosidade da imagem. Após “=” há uma fórmula que calcula cada cor dos canais R, G e B, armazenando na variável a luminosidade baseada na fórmula
 img_grayscale_pondered = np.array(img_grayscale_pondered, dtype=np.uint8) # Converte a imagem em escala cinza em dados apropiados para exibí-la
-cv2_imshow(img_grayscale_pondered) # Esta função apenas exibe a imagem em escala de cinza ponderada no Google Colab
+cv2_imshow(img_grayscale_pondered) # Esta função apenas exibe a imagem em escala de cinza ponderada no Google Colab.
